@@ -13,7 +13,7 @@ query.format = 'image/fits'
 
 #######################################
 # Edit the name of the input file here:
-input_file = "id_ra_dec.txt
+input_file = "id_ra_dec.txt"
 #######################################
 
 with open("input_file",'r') as te:
