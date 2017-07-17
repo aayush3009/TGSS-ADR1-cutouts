@@ -7,13 +7,17 @@ import subprocess
 vo.__file__
 url='http://vo.astron.nl/tgssadr/q_fits/imgs/siap.xml'
 
-query = vo.sia.SIAQuery(url)
-query.size = 0.1
-query.format = 'image/fits'
-
 #######################################
 # Edit the name of the input file here:
 input_file = "id_ra_dec.txt"
+#######################################
+
+query = vo.sia.SIAQuery(url)
+query.format = 'image/fits'
+
+#######################################
+# Choose the cutout size (degrees)
+query.size = 0.1
 #######################################
 
 with open("input_file",'r') as te:
