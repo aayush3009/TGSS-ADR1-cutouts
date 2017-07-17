@@ -11,7 +11,12 @@ query = vo.sia.SIAQuery(url)
 query.size = 0.1
 query.format = 'image/fits'
 
-with open("id_ra_dec.txt",'r') as te:
+#######################################
+# Edit the name of the input file here:
+input_file = "id_ra_dec.txt
+#######################################
+
+with open("input_file",'r') as te:
     # Input text file should have ID RA DEC
     for line in te:
         name=line.split()[0]
