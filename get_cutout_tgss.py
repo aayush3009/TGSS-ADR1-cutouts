@@ -33,6 +33,6 @@ with open(input_file,'r') as te:
 
         for image in results:
             print "Downloading %s..." %name
-            image.cachedataset(filename="TGSSimages/%s.fits" %name)
+            image.cachedataset(filename="%s.fits" %name)
 
 print("All done!")
