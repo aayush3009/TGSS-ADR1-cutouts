@@ -5,7 +5,7 @@ import pyvo as vo
 import subprocess
 
 vo.__file__
-url='http://vo.astron.nl/tgssadr/q_fits/imgs/siap.xml'
+url='https://vo.astron.nl/tgssadr/q_fits/imgs/siap.xml'
 
 #######################################
 # Input text file should have ID RA DEC
